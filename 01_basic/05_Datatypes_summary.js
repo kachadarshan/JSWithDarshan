@@ -42,4 +42,13 @@ let myFunction= function(){
 }
 
 
-//typeof used Difine Data Types of parameter we have used  
+//typeof used Difine Data Types of parameter we have used 
+
+/* ----------------------MEMORY----------------------------------------------------------------*/
+// Two Types have
+
+// Stack Memory --> used for premitive data types (Give Copy of value)
+
+// Heap Memory --> used for non premitive data types (Give Refrenation)
+
+
