@@ -1,5 +1,8 @@
 /*Objects in javascript its most Important in javascript     */
 
+// when object make using consutructor is singltone
+
+
 //Objects Literals
 // const objname ={value of object}   //object write in curly braces its have key,value pair key:value,
 
