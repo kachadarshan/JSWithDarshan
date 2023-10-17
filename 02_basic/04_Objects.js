@@ -61,5 +61,22 @@ const userinfo=[
 
 /*When Required only Keys And Values How to find Using Object method is most used in big Project  */
 
-console.log(Object.keys(tinderuser));   //its gives keys of tinder user in arrayform 
-console.log(Object.values(tinderuser)); //its gives values of tinder user in arrayform
+// console.log(Object.keys(tinderuser));   //its gives keys of tinder user in arrayform 
+// console.log(Object.values(tinderuser)); //its gives values of tinder user in arrayform
+
+
+/*Destructuring in Objects  -->Its Help To Reduce code or provide redebility */
+const course={
+
+    coursename:"js in hindi",
+    coursepricce:"999",
+    courseinstructor:"Hitesh "
+}
+
+//when you used many time this object that time help reduce code 
+const {courseinstructor} =course;
+// console.log(courseinstructor);
+
+
+/*API --> Application Programming Interface --its returen type is json*/
+
