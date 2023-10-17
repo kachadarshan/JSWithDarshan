@@ -38,4 +38,40 @@ function myuser(){
     
     const results =AddTwonum(4,5)
     
-    console.log(results);   
+    // console.log(results);   
+
+
+    //---> Shoping cart example where arguments not fixed(multiple value)
+           // if have multiple value that time used ...(is called rest operator) its add all value in array
+
+    function calculatecartprice(...num1){
+
+        return num1
+    }
+
+// console.log(calculatecartprice(5,15,25));
+
+/*-------Objects in Function */
+
+const user ={
+    username:"Darshan",
+    age:"25"
+}
+
+function handleobj(anyobj){
+
+    console.log(`username is ${user.username}`);
+}
+
+handleobj()
+
+
+/*---- Arry in Function */
+
+const mylist =["1","2","3","4","5"]
+
+function handlearray(anyarray){
+    console.log(mylist[4]);
+}
+
+handlearray()
