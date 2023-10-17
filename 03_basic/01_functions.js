@@ -37,5 +37,5 @@ function myuser(){
     }
     
     const results =AddTwonum(4,5)
-    console.log("dd");
+    
     console.log(results);   
