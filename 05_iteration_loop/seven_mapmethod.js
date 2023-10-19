@@ -1,4 +1,4 @@
-/*here we learn map and filter  */
+/*here we learn map and filter and chaining method  */
 
 const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
