@@ -21,7 +21,8 @@ const newNums = Mynum.filter( (num) =>
 } )
 
 
-//---> for each loop used 
+//---> for each loop used  
+
 const newNumss = []
 
 Mynum.forEach( (num) => {
