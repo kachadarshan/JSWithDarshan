@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set interval and clear interval</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+    <button id="start">start</button>
+
+</body>
+<script>
+
+const start = document.querySelector('#start');
+const stop = document.querySelector('#stop');
+
+let saydate =function(str){
+ console.log(str,Date.now().toLocaleString()); 
+};
+
+let interavalIds;
+
+//for start printing
+start.addEventListener('click',function(e){
+
+    interavalIds = setInterval(saydate,1000,'darshan kacha')
+
+    // const intervalId = setInterval(function(){
+    //          console.log('Darshan',Date.now().toLocaleString()); 
+
+    // }, 1000, "hi") //third parameter is argumenst of function 
+
+
+});
+
+
+//this is stop for printing 
+stop.addEventListener('click',function(e){
+    clearInterval(interavalIds)
+
+});
+
+</script>
+
+</html>
