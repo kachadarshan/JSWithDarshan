@@ -12,17 +12,19 @@
         const sayHitesh = function(){
         console.log("Hitesh");
     }
+
     const changeText = function(){
         document.querySelector('h1').innerHTML = "best JS series"
     }
 
+//set time out work same as handler work in android give delay of give second to that work
     const changeMe = setTimeout(changeText, 2000)
 
     document.querySelector('#stop').addEventListener('click', function(){
-        clearTimeout(changeMe)
+        clearTimeout(changeMe) //this the stop handler event if event not happed in given time 
         console.log("STOPPED")
     })
 
-    
+
 </script>
 </html>
