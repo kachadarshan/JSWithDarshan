@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Closures</title>
+</head>
+<body>
+    <h1>Example of Closures</h1>
+
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+
+<script>
+/*Lexical scoping*/
+//in lexical scoping tell inner fuction in scope of outer function so its used outer function varible 
+
+//but here inner function variable not access in outer function
+
+//simply child used parent varible but parent not used child varible and child - child not used there variable
+
+
+    function outer(){
+        let userName ='Darshan'
+
+        function inner(){
+            let userCity='Junagadh'  //this is under the scope of fuction its not access out of scope 
+            console.log(userName);
+        }
+
+        inner()
+    }
+
+    outer()
+</script>
+
+<script>
+
+        // document.getElementById("orange").onclick = function(){
+        //     document.body.style.backgroundColor = `orange`
+        // }
+        // document.getElementById("green").onclick = function(){
+        //     document.body.style.backgroundColor = `green`
+        // }
+
+//---->real world example of lexiacal scope and closure
+
+        function clickHandler(color){
+            // document.body.style.backgroundColor = `${color}`
+
+            return function(){  //this function return lexical scope of clickhandler 
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+
+        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById('green').onclick = clickHandler("green")
+
+</script>
+</html>
